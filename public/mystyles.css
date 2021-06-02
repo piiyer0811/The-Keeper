@@ -10,10 +10,14 @@
 
 
 }
+html{
+  height: 100%;
+}
 
 body{
   margin: 0;
-  background: #EEEEEE;
+  background-image: linear-gradient(to bottom, #f5ba13, #f6b932, #f7b846, #f6b757, #f4b766, #f4bb75, #f3c084, #f1c492, #f1cda5, #f1d6b8, #f1dfcb, #f0e8df);
+  height: 100%;
 }
 
 .note{
@@ -24,10 +28,11 @@ body{
   padding-top:0;
   padding-bottom:0;
   border-radius: 5px;
-  width:240px;
-  height:250px;
+  width:190px;
+  height:130px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
+  position: relative;
 
 }
 
@@ -54,3 +59,63 @@ body{
   height: 2.5rem;
   color:#ccc
 }
+
+
+
+.middle{
+  text-align:center;
+  position: relative;
+  display:block;
+
+
+}
+
+.inputarea{
+  display:inline-block;
+  margin:30px;
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:38%;
+  height:10rem;
+
+}
+.title,.content,.additem{
+  display:block;
+  outline:none;
+    border-style: none;
+    background-color:white;
+  }
+.title{
+  width:97%;
+  margin-bottom:8px
+  }
+
+  .content{
+    width:97%;
+    resize: none;
+  }
+  .content::-webkit-scrollbar {
+   display: none;
+ }
+  .additem{
+    background-color:#F5BA13;
+    border-radius: 50%;
+    height:2.5rem;
+    width:2.5rem;
+    position: absolute;
+    bottom: 10px;
+    left:64%;
+    color:white;
+    cursor:pointer;
+  }
+  .note-delete{
+    outline:none;
+      border-style: none;
+      background-color:white;
+      color:#F5BA13;
+      cursor:pointer;
+      position: absolute;
+      bottom:4px;
+      right:4px;
+  }
